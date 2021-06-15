@@ -1,0 +1,45 @@
+/* navigation*/
+
+nav {
+    width: 100vm;
+    background-color: #000000;
+    
+    
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    border: solid red 1px;
+}
+
+nav ul li {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0 1vw;
+    border: solid green 1px;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 1.25vw;
+    color: #ffffffbe;
+    border:chartreuse 1px dotted;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav ul li a:hover {
+    background-color: #ff000038;
+}
+
+/* body */
+
+body {
+    margin: 0;
+}
+
+h1 {
+    background-color: grey;
+}
