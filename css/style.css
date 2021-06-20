@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    /* /*background-color: black;  */
+}
+
+/* navigation*/
+
+.header{
+    border-bottom: 1px solid #E2E8F0;
+    background-color: #000000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all 01s ease-in-out;
+    background-color: #ffffff;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #ffffff;
+    list-style-type: none;
+    
+   
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #ffffff;
+    list-style-type: none;
+    
+    
+}
+
+.nav-link:hover{
+    color: #e7752a;
+}
+        /* flicker animation (css-tricks.com [i messed with these values for hours]) */
+@keyframes flicker {
+    9%, 18%, 22%, 25%, 53%, 57%, 99%{
+      text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fdfdfd96,
+        0 0 19px #fdfdfd6e,
+        0 0 40px #4127d4,
+        0 0 60px #4127d4,
+        0 0 75px #4127d4,
+        0 0 100px #4127d4,
+        0 0 110px #4127d4;
+    }
+    9%, 120%, 190% {       
+      text-shadow: none;
+    }
+  }
+
+  h2 {
+    font-size: 2rem;
+ }
+ 
+#murfs{
+    font-family: 'Yellowtail', cursive;
+    animation: flicker 1.5s infinite alternate;
+
+ }
+
+#gb{
+    font-family:'Yellowtail', cursive;
+    color: #fff;
+    padding-left: 10px;
+    text-shadow:
+    0 0 4px #00000085,
+    0 0 11px #fff,
+    0 0 19px #fff,
+    0 0 40px #e7752a,
+    0 0 80px #e7752a,
+    0 0 90px #e7752a,
+    0 0 100px #e7752a,
+    0 0 150px #e7752a;
+ }
+  
+
+ .neonSign {
+    
+    display:flex;
+    flex-direction: row;
+    font-weight: 400;
+    color: #ffffffd0;
+    border-radius:10px;
+    padding: 1.2vh 2vw;
+
+   
+}
+
+
+.mainImage {
+    display: flex;
+    align-self: center;
+    height: vh;
+    width: 100vw;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    /* nav */
+
+    .nav-menu {
+        position: fixed;
+        right: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fcfcfca2;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.25s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+
+    .nav-item {
+        margin: 1rem;
+        font-size: 4vh;
+        background-color: aqua;
+        
+        
+    }
+
+    .nav-link {
+        color: black;
+        font-weight: 600;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    /* = to x */
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    /* body */
+
+    h1 {
+    text-align: center;
+    }
+
+    .mainImage {
+        display: flex;
+        width: 100vw;
+    }
+}
+
+
+
+
+
+
+
