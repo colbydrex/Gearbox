@@ -61,14 +61,15 @@ body {
 .nav-link{
     font-size: 1.6rem;
     font-weight: 400;
-    color: #ffffff;
+    color: #e7752a; 
     list-style-type: none;
+    font-family: 'Rock Salt', cursive;
     
     
 }
 
 .nav-link:hover{
-    color: #e7752a;
+    color: #2f0dc9;
 }
         /* flicker animation (css-tricks.com [i messed with these values for hours]) */
 @keyframes flicker {
@@ -126,14 +127,28 @@ body {
    
 }
 
-
-.mainImage {
-    display: flex;
-    align-self: center;
-    height: vh;
-    width: 100vw;
+.mainContent{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.mainImage {
+    height: auto;
+    width: 1024px;
+}
+
+h1{
+    text-align: center;
+    padding:1em 0 0 0;
+}
+
+p{
+    text-align:left;
+    width: 80vw;
+    padding:5px auto;
+    margin:0 auto;
+}
 
 @media only screen and (max-width: 768px) {
 
@@ -142,11 +157,11 @@ body {
     .nav-menu {
         position: fixed;
         right: -100%;
-        top: 5rem;
+        top: 6rem;
         flex-direction: column;
-        background-color: #fcfcfca2;
+        background-color: rgba(0, 0, 255, 0.37);
         width: 100%;
-        border-radius: 10px;
+        border-radius:0 0 10px 10px;
         text-align: center;
         transition: 0.25s;
         box-shadow:
@@ -159,17 +174,23 @@ body {
     }
 
     .nav-item {
-        margin: 1rem;
-        font-size: 4vh;
-        background-color: aqua;
+        margin: 1rem 1rem;
+       
         
         
     }
 
     .nav-link {
-        color: black;
-        font-weight: 600;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color:#e7752a; 
+        font-weight: 500;
+        font-family: 'Rock Salt', cursive;
+        text-shadow:
+        0 0 2px #000,
+        0 0 4px #000;
+        background-color: #fcfcfce5;
+        padding:5px 50px;
+        border: 2px solid black;
+        border-radius: 5px;
         
     }
 
@@ -198,8 +219,20 @@ body {
     }
 
     .mainImage {
-        display: flex;
+       
         width: 100vw;
+        height:auto;
+    }
+
+    .mainContent{
+        
+    }
+
+    p{
+        margin:0 auto;
+        text-align: left;
+        width:95vw;
+        
     }
 }
 
