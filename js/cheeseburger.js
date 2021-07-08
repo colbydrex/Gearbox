@@ -17,4 +17,3 @@ function closeMenu() {
     navMenu.classList.remove("active");
 }
 
-alert('does this work');
