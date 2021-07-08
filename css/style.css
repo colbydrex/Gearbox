@@ -135,7 +135,8 @@ body {
 
 .mainImage {
     height: auto;
-    width: 1024px;
+    max-width: 1024px;
+    width:fit-content;
 }
 
 h1{
@@ -203,6 +204,12 @@ p{
 
 @media only screen and (max-width: 768px) {
 
+    
+    .mainImage{
+        display: flex;
+        width: 100vw;
+    }
+    
     /* nav */
 
     .nav-menu {
