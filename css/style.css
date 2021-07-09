@@ -16,9 +16,18 @@ body {
 
 /* navigation*/
 
+.bikeDog{
+    display:block;
+
+
+
+
+}
+
 .header{
+    
     border-bottom: 1px solid #E2E8F0;
-    background-color: #000000;
+    background-color: #080707;
 }
 
 .navbar {
@@ -153,51 +162,24 @@ p{
 
 /* MENU */
 
- .menu{   
-    display: flex;
-    flex-flow: row wrap;
-    height: 100vh;
-    justify-content: space-around;
-    align-content: flex-start;
-    background-color: blue;
-    border: 2px black solid;
-    
-    
-    
-}
-
-/*.menu > .menuItem:nth-child(1){                  may delete 
-    flex-basis: 100%; 
-    
-*/
-                                       
-
-.menuSection{
-    display: flex;
-    flex-direction: column;
-    width: 400px;
-    height: auto;
-    border: 5px dotted chartreuse;
+.menuMain{
+    display:flex;
+    flex-wrap: wrap;
     flex-basis: auto;
-    color: white;
-    text-align: center;
+    
 
 }
 
-.menuItem{
+.menuPic{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: .5rem .4rem;
-    padding: .5rem;
-    background-color: coral;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
-    
-    
-
+    width: 49vw;
+    flex-basis: auto;
 }
+ 
 
-/* menu */
+
+
+/* end menu */
 
 
 
@@ -216,15 +198,16 @@ p{
         display: flex;
         position: fixed;
         right: -100%;
-        top: 6rem;
+        top: 5.48rem;
         flex-direction: column;
-        background-color: rgba(0, 0, 255, 0.37);
+        background-color: #000000c0;
         width: 100%;
         border-radius:0 0 10px 10px;
         text-align: center;
         transition: 0.25s;
         box-shadow:
-            0 10px 27px rgba(0, 0, 0, 0.05);
+            0 10px 27px #000000b4;
+        
 
     }
 
@@ -270,6 +253,20 @@ p{
 
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
+    }
+
+        /* menu */
+
+    .menuMain{
+        display:flex;
+        background-color: black;
+    }
+        
+    .menuPic{
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        margin: 5px auto;
     }
 
 }
